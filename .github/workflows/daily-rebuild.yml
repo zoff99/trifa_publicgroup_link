@@ -19,7 +19,7 @@ jobs:
     - name: build
       run: id -a;pwd;ls -al
     - run: bash init.sh
-    - run: gem install bundler
+    - run: sudo gem install bundler
     - run: bundle exec jekyll build
 
 
