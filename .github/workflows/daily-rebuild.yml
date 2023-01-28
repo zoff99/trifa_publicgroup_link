@@ -18,6 +18,15 @@ jobs:
         fetch-depth: 0
     - name: build
       run: id -a;pwd;ls -al
+    - run: apt-get update
+
+    - run: |
+          sudo apt-get update && \
+          sudo DEBIAN_FRONTEND=noninteractive apt-get remove g++ && \
+          sudo DEBIAN_FRONTEND=noninteractive \
+          apt-get install -y --no-install-recommends \
+          jekyll
+
     - run: bash init.sh
     - run: sudo gem install bundler
     - run: bundle exec jekyll build
