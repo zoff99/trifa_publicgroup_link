@@ -26,7 +26,6 @@ jobs:
           jekyll
 
     - run: bash init.sh
-    - run: sudo bundle install
     - run: jekyll build
 
 
