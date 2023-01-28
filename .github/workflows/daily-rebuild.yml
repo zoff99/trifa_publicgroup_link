@@ -27,7 +27,7 @@ jobs:
 
     - run: bash init.sh
     - run: sudo gem install bundler
-    - run: bundle update
+    - run: sudo bundle update
     - run: bundle exec jekyll build
 
 
