@@ -16,13 +16,8 @@
                             </clipPath>
                         </svg>
 
-                        <div class="videoContainer hidden">
-                            <video class="screenvideo" autoplay="autoplay" controls="controls">
-                            </video>
-                        </div>  
-                        
-                        <img id="phoneScreen1" class="iphoneScreen absolute" src="/assets/screenshot/screenshot-01.png" alt="">
-                        <img id="phoneScreen2" class="iphoneScreen" src="/assets/screenshot/screenshot-02.png" alt="" style="opacity: 0;">
+                        <img id="phoneScreen1" class="iphoneScreen absolute" src="./assets/screenshot/screenshot-01.png" alt="">
+                        <img id="phoneScreen2" class="iphoneScreen" src="./assets/screenshot/screenshot-02.png" alt="" style="opacity: 0;">
 
                         {% include screencontent.html %}
 
@@ -53,13 +48,10 @@
                         </div>
                         <div class="downloadButtonsContainer">
                             {% if site.playstore_link %}
-                                <a class="playStoreLink" href="{{site.playstore_link}}"><img class="playStore" src="/assets/playstore.png"></a>
+                                <a class="playStoreLink" href="{{site.playstore_link}}"><img class="playStore" src="./assets/playstore.png"></a>
                             {% endif %}
                             {% if site.fdroid_link %}
-                                <a class="fdroidLink" href="{{site.fdroid_link}}"><img class="fdroid" src="/assets/fdroid.png"></a>
-                            {% endif %}
-                            {% if site.appstore_link %}
-                                <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore" src="/assets/appstore.png"></a>
+                                <a class="fdroidLink" href="{{site.fdroid_link}}"><img class="fdroid" src="./assets/fdroid.png"></a>
                             {% endif %}
                         </div>
                         <a href="/contribute">

@@ -20,7 +20,6 @@ jobs:
       run: id -a;pwd;ls -al
     - run: |
           sudo apt-get update && \
-          sudo DEBIAN_FRONTEND=noninteractive apt-get remove g++ && \
           sudo DEBIAN_FRONTEND=noninteractive \
           apt-get install -y --no-install-recommends \
           jekyll

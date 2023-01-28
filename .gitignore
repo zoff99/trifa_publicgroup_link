@@ -7,3 +7,4 @@ _pages/changelog.md
 .DS_Store
 .jekyll-cache/
 assets/.DS_Store
+.localrun
