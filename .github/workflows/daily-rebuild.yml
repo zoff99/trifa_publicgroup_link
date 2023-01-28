@@ -18,3 +18,7 @@ jobs:
         fetch-depth: 0
     - name: build
       run: id -a;pwd;ls -al
+    - run: bash init.sh
+    - run: bundle exec jekyll build
+
+
